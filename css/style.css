@@ -7,11 +7,161 @@
 
 /* GENERICS */
 body{
-    font-family: '';
+    font-family: 'PT Sans';
+    padding-top: 60px;
 }
 
 /* CONTAINERS */
 .container-l {
-    max-width: 950px;
+    max-width: 1200px;
     margin: 0 auto;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.container-s {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* UTILS */
+.border {
+    border: 1px dashed #000;
+}
+
+.bg-lilac {
+    background-color: #9792E4;
+}
+
+.bg-white {
+    background-color: #ffffff;
+}
+
+.bg-gray {
+    background-color: #333333;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+}
+
+li {
+    padding: 0 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* HEADER */
+header {
+    background-color: #0084FD;
+    height: 60px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar > * {
+    flex-basis: 50%;
+}
+
+.nav-actions > ul {
+    line-height: 60px;
+    justify-content: flex-end;
+}
+
+.nav-actions a{
+    color: #fff;
+}
+
+#get-started {
+    background-color: #fff;
+    color: #000;
+    border-radius: 15px;
+    padding: 5px 20px;
+    border: 3px solid transparent;
+}
+
+#get-started:hover {
+    color: #fff;
+    background-color: #7ec1ff;
+    box-shadow: 2px 2px #004e97;
+}
+
+/* MAIN */
+section {
+    padding: 60px 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+.column-30 {
+    flex-basis: 30%;
+}
+
+.column-33 {
+    flex-basis: calc(100% / 3);
+}
+
+.column-50 {
+    flex-basis: calc(100% / 2);
+}
+
+.column-66 {
+    flex-basis: calc(100% / (3 / 2));
+}
+
+.column-70 {
+    flex-basis: 70%;
+}
+
+.card-feature {
+    min-height: 300px;
+}
+
+.card-app {
+    min-height: 450px;
+}
+
+.card-testimonials {
+    min-height: 250px;
+}
+
+.card-benefits {
+    min-height: 400px;
+}
+
+.card-about {
+    min-height: 700px;
+}
+
+.card-download {
+    min-height: 450px;
+}
+
+footer {
+    padding: 30px 0;
+}
+
+.card-foot {
+    min-height: 150px;
 }
